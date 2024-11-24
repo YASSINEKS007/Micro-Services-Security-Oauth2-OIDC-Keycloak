@@ -1,0 +1,23 @@
+server:
+  port: 8000
+
+spring:
+  application:
+    name: ebank-service
+  datasource:
+    url: jdbc:h2:mem:ebank
+  h2:
+    console:
+      enabled: true
+  graphql:
+    graphiql:
+      enabled: true
+
+logging:
+  level:
+    org:
+      springframework:
+        graphql: DEBUG
+
+
+
